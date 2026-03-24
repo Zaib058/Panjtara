@@ -1,19 +1,19 @@
 <div align="center">
   
-  ![GitHub repo size](https://img.shields.io/github/repo-size/codewithsadee/grilli)
-  ![GitHub stars](https://img.shields.io/github/stars/codewithsadee/grilli?style=social)
-  ![GitHub forks](https://img.shields.io/github/forks/codewithsadee/grilli?style=social)
-[![Twitter Follow](https://img.shields.io/twitter/follow/codewithsadee_?style=social)](https://twitter.com/intent/follow?screen_name=codewithsadee_)
-  [![YouTube Video Views](https://img.shields.io/youtube/views/CjVGp5kGHxA?style=social)](https://youtu.be/CjVGp5kGHxA)
+  ![GitHub repo size](https://img.shields.io/github/repo-size/Zaib058/Panjtara)
+  ![GitHub stars](https://img.shields.io/github/stars/Zaib058/Panjtara?style=social)
+  ![GitHub forks](https://img.shields.io/github/forks/Zaib058/Panjtara?style=social)
+[![Linkedin Follow](https://www.linkedin.com/in/zaibfatima/_?style=social)](https://linkedin.com/intent/follow?screen_name=zaibfatima_)
+
 
   <br />
   <br />
 
-  <h2 align="center">Grilli - Restaurant Website</h2>
+  <h2 align="center">Panjtara - Restaurant Website</h2>
 
-  Grilli is a fully responsive restaurant website, <br />Responsive for all devices, build using HTML, CSS, and JavaScript.
+  Panjtara is a fully responsive restaurant website, <br />Responsive for all devices, build using HTML, CSS, and JavaScript.
 
-  <a href="https://codewithsadee.github.io/grilli/"><strong>➥ Live Demo</strong></a>
+  <a href="https://github.com/Zaib058/Panjtara/"><strong>➥ Live Demo</strong></a>
 
 </div>
 
