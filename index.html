@@ -1,0 +1,1368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - primary meta tags
+  -->
+  <title>Panjtara - Amazing & Delicious Food</title>
+  <meta name="title" content="PanjTara - Amazing & Delicious Food">
+  <meta name="description" content="This is a Restaurant website html based  made by zaibFatima">
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/favicon.png type="image/svg+xml">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Forum&display=swap" rel="stylesheet">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/hero-1.jpg">
+  <link rel="preload" as="image" href="./assets/images/hero-2.jpg">
+  <link rel="preload" as="image" href="./assets/images/hero-3.jpg">
+
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #PRELOADER
+  -->
+
+  <div class="preload" data-preaload>
+    <div class="circle"></div>
+    <p class="text">PanjTara</p>
+  </div>
+
+
+
+
+
+  <!-- 
+    - #TOP BAR
+  -->
+
+  <div class="topbar">
+    <div class="container">
+
+      <address class="topbar-item">
+        <div class="icon">
+          <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+        </div>
+
+        <span class="span">
+          Restaurant St, , Rawalpindi, Pakistan
+        </span>
+      </address>
+
+      <div class="separator"></div>
+
+      <div class="topbar-item item-2">
+        <div class="icon">
+          <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+        </div>
+
+        <span class="span">Daily : 7.00 pm to 2.00 am</span>
+      </div>
+
+      <a href="tel:+11234567890" class="topbar-item link">
+        <div class="icon">
+          <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+        </div>
+
+        <span class="span">+ 031 95598799</span>
+        <span class="span">// + 033 31114699</span>
+      </a>
+
+      <div class="separator"></div>
+
+      <a href="mailto:booking@panjtara.com" class="topbar-item link">
+        <div class="icon">
+          <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+        </div>
+
+        <span class="span">booking@panjtara.com</span>
+      </a>
+
+    </div>
+  </div>
+
+
+
+<!-- #HEADER -->
+<header class="header" data-header>
+  <div class="container">
+
+    <a href="#" class="logo">
+      <img src="./assets/images/favicon.png" alt="PanjTara - Home" class="logo-img">
+    </a>
+
+    <nav class="navbar" data-navbar>
+      <button class="close-btn" aria-label="close menu" data-nav-toggler>
+        <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+      </button>
+
+      <a href="#" class="logo">
+        <img src="./assets/images/favicon.png" width="160" height="50" alt="Panjtara - Home">
+      </a>
+
+      <ul class="navbar-list">
+
+        <li class="navbar-item">
+          <a href="#home" class="navbar-link hover-underline active">
+            <div class="separator"></div>
+            <span class="span">Home</span>
+          </a>
+        </li>
+
+        <li class="navbar-item">
+          <a href="menu.html" class="navbar-link hover-underline">
+            <div class="separator"></div>
+            <span class="span">Menus</span>
+          </a>
+        </li>
+
+        <li class="navbar-item">
+          <a href="deals.html" class="navbar-link sparkle-zigzag">
+            <div class="separator"></div>
+            <span class="span">Deals and Discounts</span>
+          </a>
+        </li>
+
+        <li class="navbar-item">
+          <a href="#about" class="navbar-link hover-underline">
+            <div class="separator"></div>
+            <span class="span">About Us</span>
+          </a>
+        </li>
+
+        <li class="navbar-item">
+          <a href="#why" class="navbar-link hover-underline">
+            <div class="separator"></div>
+            <span class="span">Why Panjtara?</span>
+          </a>
+        </li>
+
+        <li class="navbar-item">
+          <a href="#contact" class="navbar-link hover-underline">
+            <div class="separator"></div>
+            <span class="span">Contact</span>
+          </a>
+        </li>
+
+      </ul>
+
+      <div class="text-center">
+        <p class="headline-1 navbar-title">Visit Us</p>
+
+        <address class="body-4">
+          Restaurant St, Delicious City, <br>
+          London 9578, UK
+        </address>
+
+        <p class="body-4 navbar-text">Open: 9.30 am - 2.30pm</p>
+
+        <a href="mailto:booking@panjtara.com" class="body-4 sidebar-link">booking@panjtara.com</a>
+
+        <div class="separator"></div>
+
+        <p class="contact-label">Booking Request</p>
+
+        <a href="tel:+03331114699" class="body-1 contact-number hover-underline">
+          + 033-31114699
+        </a>
+      </div>
+    </nav>
+
+    <!-- Book a Table Button (Dynamic Text but Fixed Size) -->
+    <a href="#reservation" class="btn btn-secondary sliding-btn">
+      <span id="btn-text" class="text text-1">Book A Table</span>
+      <span class="text text-2" aria-hidden="true"></span>
+    </a>
+
+    <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+      <span class="line line-1"></span>
+      <span class="line line-2"></span>
+      <span class="line line-3"></span>
+    </button>
+
+    <div class="overlay" data-nav-toggler data-overlay></div>
+  </div>
+</header>
+
+<!-- 🌟 Mottos for Slider (Add Inside or Above Slider Section) -->
+<div class="motto-left">Meals and Memories</div>
+<div class="motto-right">Top up your dining Delights</div>
+
+<!-- ✨ Custom Styles -->
+<style>
+  /* 🔹 Deals and Discounts Button Animation */
+  .sparkle-zigzag {
+    position: relative;
+    display: inline-block;
+    padding: 0.6rem 1rem;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    background: linear-gradient(45deg, #b30000, #ff1a1a);
+    border-radius: 10px;
+    box-shadow: 0 0 10px #ff4d4d, 0 0 20px #ff1a1a;
+    animation: zigzag 2s infinite ease-in-out, sparkleGlow 1.8s infinite;
+    overflow: hidden;
+  }
+
+  @keyframes sparkleGlow {
+    0%, 100% {
+      box-shadow: 0 0 5px #ff4d4d, 0 0 15px #ff6666;
+    }
+    50% {
+      box-shadow: 0 0 10px #ff1a1a, 0 0 25px #ff4d4d;
+    }
+  }
+
+  @keyframes zigzag {
+    0% { transform: translateY(0); }
+    25% { transform: translateY(-2px) rotate(-1deg); }
+    50% { transform: translateY(2px) rotate(1deg); }
+    75% { transform: translateY(-1px) rotate(-1deg); }
+    100% { transform: translateY(0); }
+  }
+
+  .sparkle-zigzag::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -75%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to right, transparent 0%, rgba(255,255,255,0.5) 50%, transparent 100%);
+    transform: skewX(-20deg);
+    animation: shine 2.5s infinite;
+  }
+
+  @keyframes shine {
+    0% { left: -75%; }
+    100% { left: 125%; }
+  }
+
+  /* 🔹 Fixed Size for Sliding Button */
+  .sliding-btn {
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+    min-width: 200px;
+    padding: 0.75rem 1.5rem;
+    display: inline-block;
+    text-align: center;
+    transition: background 0.3s;
+    max-width: 100%;
+    border-radius: 8px;
+  }
+
+  .sliding-btn .text {
+    display: block;
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+
+  /* 🔹 Mottos Left & Right */
+  .motto-left, .motto-right {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 2rem;
+    font-weight: bold;
+    text-shadow: 0 0 10px #ffcc00, 0 0 20px #ff9900;
+    animation: pulse 2.5s infinite;
+    z-index: 10;
+    pointer-events: none;
+  }
+
+  .motto-left {
+    left: 3%;
+  }
+
+  .motto-right {
+    right: 3%;
+  }
+
+  @keyframes pulse {
+    0% { opacity: 0.8; transform: translateY(-50%) scale(1); }
+    50% { opacity: 1; transform: translateY(-50%) scale(1.1); }
+    100% { opacity: 0.8; transform: translateY(-50%) scale(1); }
+  }
+
+  /* 🔹 Responsive Mottos (Optional) */
+  @media (max-width: 768px) {
+    .motto-left, .motto-right {
+      font-size: 1.1rem;
+      top: 60%;
+    }
+  }
+</style>
+
+<!-- 🔁 Script to Toggle Button Text -->
+<script>
+  const btnText = document.getElementById('btn-text');
+  const phrases = ['Book A Table', 'Online Reservation'];
+  let i = 0;
+
+  setInterval(() => {
+    i = (i + 1) % phrases.length;
+    btnText.textContent = phrases[i];
+  }, 3000);
+</script>
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="hero text-center" aria-label="home" id="home">
+
+        <ul class="hero-slider" data-hero-slider>
+
+          <li class="slider-item active" data-hero-slider-item>
+
+            <div class="slider-bg">
+              <img src="./assets/images/hero-1.jpg" width="1880" height="950" alt="" class="img-cover">
+            </div>
+
+            <p class="label-2 section-subtitle slider-reveal">Tradational & Hygine</p>
+
+            <h1 class="display-1 hero-title slider-reveal">
+              For the love of <br>
+              delicious food
+            </h1>
+
+            <p class="body-2 hero-text slider-reveal">
+              Come with family & feel the joy of mouthwatering food
+            </p>
+
+            <a href="menu.html" class="btn btn-primary slider-reveal">
+              <span class="text text-1">View Our Menu</span>
+
+              <span class="text text-2" aria-hidden="true">View Our Menu</span>
+            </a>
+
+          </li>
+
+          <li class="slider-item" data-hero-slider-item>
+
+            <div class="slider-bg">
+              <img src="./assets/images/hero-2.jpg" width="1880" height="950" alt="" class="img-cover">
+            </div>
+
+            <p class="label-2 section-subtitle slider-reveal">delightful experience</p>
+
+            <h1 class="display-1 hero-title slider-reveal">
+              Flavors Inspired by <br>
+              the Seasons
+            </h1>
+
+            <p class="body-2 hero-text slider-reveal">
+              Come with family & feel the joy of mouthwatering food
+            </p>
+
+            <a href="#" class="btn btn-primary slider-reveal">
+              <span class="text text-1">View Our Menu</span>
+
+              <span class="text text-2" aria-hidden="true">View Our Menu</span>
+            </a>
+
+          </li>
+
+          <li class="slider-item" data-hero-slider-item>
+
+            <div class="slider-bg">
+              <img src="./assets/images/hero-3.jpg" width="1880" height="950" alt="" class="img-cover">
+            </div>
+
+            <p class="label-2 section-subtitle slider-reveal">amazing & delicious</p>
+
+            <h1 class="display-1 hero-title slider-reveal">
+              Where every flavor <br>
+              tells a story
+            </h1>
+
+            <p class="body-2 hero-text slider-reveal">
+              Come with family & feel the joy of mouthwatering food
+            </p>
+
+            <a href="#" class="btn btn-primary slider-reveal">
+              <span class="text text-1">View Our Menu</span>
+
+              <span class="text text-2" aria-hidden="true">View Our Menu</span>
+            </a>
+
+          </li>
+
+        </ul>
+
+        <button class="slider-btn prev" aria-label="slide to previous" data-prev-btn>
+          <ion-icon name="chevron-back"></ion-icon>
+        </button>
+
+        <button class="slider-btn next" aria-label="slide to next" data-next-btn>
+          <ion-icon name="chevron-forward"></ion-icon>
+        </button>
+
+        <a href="#" class="hero-btn has-after">
+          <img src="./assets/images/hero-icon.png" width="48" height="48" alt="booking icon">
+
+          <span class="label-2 text-center span">Book A Table</span>
+        </a>
+
+      </section>
+      <!-- 
+        - #SERVICE
+      -->
+
+      <section class="section service bg-black-10 text-center" aria-label="service">
+        <div class="container">
+
+          <p class="section-subtitle label-2">Flavors For Royalty</p>
+
+          <h2 class="headline-1 section-title">We Offer Top Notch</h2>
+
+          <p class="section-text">
+                Because food isn’t just about taste — it’s about memories, warmth, and tradition.
+                At Panjtara, we cook the way our elders did — with patience, love, and real ingredients.
+                Every dish tells a story, bringing you comfort and connection in every bite.
+                It’s not just a meal, it’s a feeling — welcome to Panjtara.
+
+          </p>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="service-card">
+
+                <a href="#" class="has-before hover:shine">
+                  <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
+                    <img src="./assets/images/service-01.jpg" width="285" height="336" loading="lazy" alt="Breakfast"
+                      class="img-cover">
+                  </figure>
+                </a>
+
+                <div class="card-content">
+
+                  <h3 class="title-4 card-title">
+                    <a href="menu.html">Fast Food</a>
+                  </h3>
+
+                  <a href="menu.html" class="btn-text hover-underline label-2">View Menu</a>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <a href="#" class="has-before hover:shine">
+                  <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
+                    <img src="./assets/images/service-02.jpg" width="285" height="336" loading="lazy" alt="Appetizers"
+                      class="img-cover">
+                  </figure>
+                </a>
+
+                <div class="card-content">
+
+                  <h3 class="title-4 card-title">
+                    <a href="menu.html">Arabian Platter</a>
+                  </h3>
+
+                  <a href="menu.html" class="btn-text hover-underline label-2">View Menu</a>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <a href="#" class="has-before hover:shine">
+                  <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
+                    <img src="./assets/images/service-03.jpg" width="285" height="336" loading="lazy" alt="Drinks"
+                      class="img-cover">
+                  </figure>
+                </a>
+
+                <div class="card-content">
+
+                  <h3 class="title-4 card-title">
+                    <a href="menu.html">Main Course</a>
+                  </h3>
+
+                  <a href="menu.html" class="btn-text hover-underline label-2">View Menu</a>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+          <img src="./assets/images/shape-1.png" width="246" height="412" loading="lazy" alt="shape"
+            class="shape shape-1 move-anim">
+          <img src="./assets/images/shape-2.png" width="343" height="345" loading="lazy" alt="shape"
+            class="shape shape-2 move-anim">
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #ABOUT
+      -->
+
+      <section class="section about text-center" aria-labelledby="about-label" id="about">
+        <div class="container">
+
+          <div class="about-content">
+
+            <p class="label-2 section-subtitle" id="about-label">Our Story</p>
+
+            <h2 class="headline-1 section-title">Every Flavor Tells a Story</h2>
+
+            <p class="section-text">
+                    Panjtara was born from a love for traditional cooking and timeless flavors.
+                    Inspired by family kitchens, we serve food that feels warm and familiar.
+                    Every dish is made with care, carrying the essence of home and heritage.
+                    At Panjtara, it’s more than just a meal — it’s a taste of where we come from.
+            </p>
+
+            <div class="contact-label">Book Through Call</div>
+
+            <a href="tel:+03331114699" class="body-1 contact-number hover-underline">+ 033 31114699</a>
+
+            <a href="#" class="btn btn-primary">
+              <span class="text text-1">Read More</span>
+
+              <span class="text text-2" aria-hidden="true">Read More</span>
+            </a>
+
+          </div>
+
+          <figure class="about-banner">
+
+            <img src="./assets/images/about-banner.jpg" width="570" height="570" loading="lazy" alt="about banner"
+              class="w-100" data-parallax-item data-parallax-speed="1">
+
+            <div class="abs-img abs-img-1 has-before" data-parallax-item data-parallax-speed="1.75">
+              <img src="./assets/images/about-abs-image.jpg" width="285" height="285" loading="lazy" alt=""
+                class="w-100">
+            </div>
+
+            <div class="abs-img abs-img-2 has-before">
+              <img src="./assets/images/badge-02.png" width="133" height="134" loading="lazy" alt="">
+            </div>
+
+          </figure>
+
+          <img src="./assets/images/shape-3.png" width="197" height="194" loading="lazy" alt="" class="shape">
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #SPECIAL DISH
+      -->
+
+      <section class="special-dish text-center" aria-labelledby="dish-label">
+
+        <div class="special-dish-banner">
+          <img src="./assets/images/special-dish-banner-01.jpg" width="940" height="900" loading="lazy" alt="special dish"
+            class="img-cover">
+        </div>
+
+        <div class="special-dish-content bg-black-10">
+          <div class="container">
+
+            <img src="./assets/images/badge-1.png" width="28" height="41" loading="lazy" alt="badge" class="abs-img">
+
+            <p class="section-subtitle label-2">Special Dish</p>
+
+            <h2 class="headline-1 section-title">Arabian Rice</h2>
+
+            <p class="section-text">
+             Our special Arabian Rice brings  rare and rich flavor to your plate.
+             Served by only a few, it's a fragrant, spiced rice dish layered with tender meat and tradition.
+             At Panjtara, we take pride in offering this unique taste, slow-cooked to perfection.
+
+            </p>
+
+            <div class="wrapper">
+              <del class="del body-3">Rs 670.00</del>
+
+              <span class="span body-1">Rs 590.00</span>
+            </div>
+
+            <a href="#" class="btn btn-primary">
+              <span class="text text-1">View All Menu</span>
+
+              <span class="text text-2" aria-hidden="true">View All Menu</span>
+            </a>
+
+          </div>
+        </div>
+
+        <img src="./assets/images/shape-4.png" width="179" height="359" loading="lazy" alt="" class="shape shape-1">
+
+        <img src="./assets/images/shape-9.png" width="351" height="462" loading="lazy" alt="" class="shape shape-2">
+
+      </section>
+
+
+      <!-- 
+        - #MENU
+      -->
+
+      <section class="section menu" aria-label="menu-label" id="menu">
+        <div class="container">
+
+          <p class="section-subtitle text-center label-2">Special Selection</p>
+
+          <h2 class="headline-1 section-title text-center">Delicious Menu</h2>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="menu-card hover:card">
+
+                <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                  <img src="./assets/images/menu-01.png" width="100" height="100" loading="lazy" alt="Greek Salad"
+                    class="img-cover">
+                </figure>
+
+                <div>
+
+                  <div class="title-wrapper">
+                    <h3 class="title-3">
+                      <a href="#" class="card-title">Chicken Roll Paratha</a>
+                    </h3>
+
+                    <span class="span title-2">Rs 430</span>
+                  </div>
+
+                  <p class="card-text label-1">
+                    Chicken roll paratha is made with spiced grilled chicken, soft paratha, fresh veggies, and creamy sauces wrapped into a flavorful roll.
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="menu-card hover:card">
+
+                <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                  <img src="./assets/images/menu-02.png" width="100" height="100" loading="lazy" alt="Lasagne"
+                    class="img-cover">
+                </figure>
+
+                <div>
+
+                  <div class="title-wrapper">
+                    <h3 class="title-3">
+                      <a href="#" class="card-title">Zinger Burger</a>
+                    </h3>
+
+                    <span class="span title-2">Rs 490</span>
+                  </div>
+
+                  <p class="card-text label-1">
+                    Vegetables, cheeses, ground meats, tomato sauce, seasonings and spices
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="menu-card hover:card">
+
+                <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                  <img src="./assets/images/menu-03.png" width="100" height="100" loading="lazy" alt="Butternut Pumpkin"
+                    class="img-cover">
+                </figure>
+
+                <div>
+
+                  <div class="title-wrapper">
+                    <h3 class="title-3">
+                      <a href="#" class="card-title">Hot Shot(8pcs)</a>
+                    </h3>
+
+                    <span class="span title-2">Rs 350</span>
+                  </div>
+
+                  <p class="card-text label-1">
+                    Hot Shot is a spicy, crispy chicken fillet topped with fiery sauce and cheese, served on a soft bun or as a zesty snack.
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="menu-card hover:card">
+
+                <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                  <img src="./assets/images/menu-04.png" width="100" height="100" loading="lazy" alt="Tokusen Wagyu"
+                    class="img-cover">
+                </figure>
+
+                <div>
+
+                  <div class="title-wrapper">
+                    <h3 class="title-3">
+                      <a href="#" class="card-title">Chicken Angara</a>
+                    </h3>
+
+                    <span class="badge label-1">New</span>
+
+                    <span class="span title-2">Rs 1590</span>
+                  </div>
+
+                  <p class="card-text label-1">
+                    Chicken Angara is a smoky, spicy curry made with marinated chicken, rich spices, and a signature charcoal-infused flavor for that bold, fiery taste.
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="menu-card hover:card">
+
+                <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                  <img src="./assets/images/menu-05.png" width="100" height="100" loading="lazy" alt="Olivas Rellenas"
+                    class="img-cover">
+                </figure>
+
+                <div>
+
+                  <div class="title-wrapper">
+                    <h3 class="title-3">
+                      <a href="#" class="card-title">Malai Boti</a>
+                    </h3>
+
+                    <span class="span title-2">Rs 270</span>
+                  </div>
+
+                  <p class="card-text label-1">
+                    Malai Boti is a creamy, tender chicken dish marinated in yogurt, cream, and mild spices, grilled to perfection for a melt-in-the-mouth experience.
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="menu-card hover:card">
+
+                <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                  <img src="./assets/images/menu-06.png" width="100" height="100" loading="lazy" alt="Opu Fish"
+                    class="img-cover">
+                </figure>
+
+                <div>
+
+                  <div class="title-wrapper">
+                    <h3 class="title-3">
+                      <a href="#" class="card-title">Balochi Rosh</a>
+                    </h3>
+
+                    <span class="span title-2">RS 1000</span>
+                  </div>
+
+                  <p class="card-text label-1">
+                    Balochi Rosh is a traditional slow-cooked meat dish, made with bone-in mutton, garlic, black pepper, and salt, simmered in its own juices for a rich, natural flavor — a true taste of Baloch heritage.
+
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+          <p class="menu-text text-center">
+            During winter daily from <span class="span">7:00 pm</span> to <span class="span">9:00 pm</span>
+          </p>
+
+          <a href="#" class="btn btn-primary">
+            <span class="text text-1">View All Menu</span>
+
+            <span class="text text-2" aria-hidden="true">View All Menu</span>
+          </a>
+
+          <img src="./assets/images/shape-5.png" width="921" height="1036" loading="lazy" alt="shape"
+            class="shape shape-2 move-anim">
+          <img src="./assets/images/shape-6.png" width="343" height="345" loading="lazy" alt="shape"
+            class="shape shape-3 move-anim">
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #TESTIMONIALS
+      -->
+
+      <section class="section testi text-center has-bg-image"
+        style="background-image: url('./assets/images/testimonial-bg.jpg')" aria-label="testimonials">
+        <div class="container">
+
+          <div class="quote">”</div>
+
+          <p class="headline-2 testi-text">
+            Panjtara’s food was absolutely delicious! Every bite was full of authentic flavor — especially loved the juicy kababs and perfectly spiced karhai. Highly recommended!
+          </p>
+
+          <div class="wrapper">
+            <div class="separator"></div>
+            <div class="separator"></div>
+            <div class="separator"></div>
+          </div>
+
+          <div class="profile">
+            <img src="./assets/images/testi-avatar.jpg" width="100" height="100" loading="lazy" alt="Sam Jhonson"
+              class="img">
+
+            <p class="label-2 profile-name">Daniyal Hanif</p>
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+     <!-- RESERVATION SECTION -->
+<section class="reservation">
+  <div class="container">
+
+    <div class="form reservation-form bg-black-10">
+
+      <!-- FORM START -->
+      <form 
+        action="https://formspree.io/f/xqabwwdg" 
+        method="POST" 
+        class="form-left"
+        onsubmit="sendWhatsApp(); showThankYou();"
+      >
+
+        <h2 class="headline-1 text-center">Online Reservation</h2>
+
+        <p class="form-text text-center">
+          Booking request <a href="tel:+03331114699" class="link">+033-31114699</a>
+          or fill out the order form
+        </p>
+
+        <div class="input-wrapper">
+          <input type="text" name="name" placeholder="Your Name" autocomplete="off" class="input-field" required>
+          <input type="tel" name="phone" placeholder="Phone Number" autocomplete="off" class="input-field" required>
+        </div>
+
+        <div class="input-wrapper">
+
+          <div class="icon-wrapper">
+            <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+
+            <select name="person" class="input-field" required>
+              <option value="1 Person">1 Person</option>
+              <option value="2 Person">2 Person</option>
+              <option value="3 Person">3 Person</option>
+              <option value="4 Person">4 Person</option>
+              <option value="5 Person">5 Person</option>
+              <option value="6 Person">6 Person</option>
+              <option value="7 Person">7 Person</option>
+            </select>
+
+            <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
+          </div>
+
+          <div class="icon-wrapper">
+            <ion-icon name="calendar-clear-outline" aria-hidden="true"></ion-icon>
+
+            <input type="date" name="reservation-date" class="input-field" required>
+
+            <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
+          </div>
+
+          <div class="icon-wrapper">
+            <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+            <select name="time" class="input-field" required>
+              <option value="07:00 pm">07:00 pm</option>
+              <option value="08:00 pm">08:00 pm</option>
+              <option value="09:00 pm">09:00 pm</option>
+              <option value="10:00 pm">10:00 pm</option>
+              <option value="11:00 pm">11:00 pm</option>
+              <option value="12:00 pm">12:00 pm</option>
+              <option value="01:00 am">01:00 am</option>
+              <option value="02:00 am">02:00 am</option>
+            </select>
+
+            <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
+          </div>
+
+        </div>
+
+        <textarea name="message" placeholder="Message" autocomplete="off" class="input-field"></textarea>
+
+        <button type="submit" class="btn btn-secondary">
+          <span class="text text-1">Book A Table</span>
+          <span class="text text-2" aria-hidden="true">Book A Table</span>
+        </button>
+
+      </form>
+      <!-- FORM END -->
+
+      <!-- CONTACT INFO RIGHT SIDE -->
+      <div class="form-right text-center" style="background-image: url('./assets/images/form-pattern.png')">
+
+        <h2 class="headline-1 text-center">Contact Us</h2>
+
+        <p class="contact-label">Booking Request</p>
+        <a href="tel:+03331114699" class="body-1 contact-number hover-underline">+033-31114699</a>
+
+        <div class="separator"></div>
+
+        <p class="contact-label">Location</p>
+        <address class="body-4">
+          Restaurant St, Harely street, <br>
+          Rawalpindi, Pakistan
+        </address>
+
+        <p class="contact-label">Lunch Time</p>
+        <p class="body-4">
+          Monday to Sunday <br>
+          7.00 pm - 2.00am
+        </p>
+
+        <p class="contact-label">Dinner Time</p>
+        <p class="body-4">
+          Monday to Sunday <br>
+          07.00 pm - 2.00am
+        </p>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- IONICON SUPPORT (IF NOT ALREADY INCLUDED) -->
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+<!-- SCRIPT FOR WHATSAPP AND THANK YOU -->
+<script>
+  function sendWhatsApp() {
+    const name = document.querySelector('input[name="name"]').value.trim();
+    const phone = document.querySelector('input[name="phone"]').value.trim();
+    const person = document.querySelector('select[name="person"]').value;
+    const date = document.querySelector('input[name="reservation-date"]').value;
+    const time = document.querySelector('select[name="time"]').value;
+    const message = document.querySelector('textarea[name="message"]').value.trim();
+
+    const whatsappMessage = `*New Reservation Request*%0A
+Name: ${name}%0A
+Phone: ${phone}%0A
+Persons: ${person}%0A
+Date: ${date}%0A
+Time: ${time}%0A
+Message: ${message}`;
+
+    const url = `https://wa.me/923331114699?text=${encodeURIComponent(whatsappMessage)}`;
+    window.open(url, '_blank');
+  }
+
+  function showThankYou() {
+    setTimeout(() => {
+      alert("🎉 Thank you! Your reservation request has been submitted.");
+    }, 500);
+  }
+</script>
+
+
+
+
+
+
+      <!-- 
+        - #FEATURES
+      -->
+
+      <section class="section features text-center" aria-label="features" id="why">
+        <div class="container">
+
+          <p class="section-subtitle label-2">Why Choose Us</p>
+
+          <h2 class="headline-1 section-title">Why Panjtara?</h2>
+
+          <ul class="grid-list">
+
+            <li class="feature-item">
+              <div class="feature-card">
+
+                <div class="card-icon">
+                  <img src="./assets/images/hygenic.jpg" width="100" height="80" loading="lazy" alt="icon">
+                </div>
+
+                <h3 class="title-2 card-title">Hygienic Food</h3>
+
+                <p class="label-1 card-text">Traditional flavors, prepared with modern hygiene and heartfelt care.</p>
+
+              </div>
+            </li>
+
+            <li class="feature-item">
+              <div class="feature-card">
+
+                <div class="card-icon">
+                  <img src="./assets/images/envoirment.jpg" width="100" height="80" loading="lazy" alt="icon">
+                </div>
+
+                <h3 class="title-2 card-title">Fresh Environment</h3>
+
+                <p class="label-1 card-text">Fresh vibes, clean spaces, and food that feels like home.</p>
+
+              </div>
+            </li>
+
+            <li class="feature-item">
+              <div class="feature-card">
+
+                <div class="card-icon">
+                  <img src="./assets/images/skilled-chef.jpg" width="100" height="80" loading="lazy" alt="icon">
+                </div>
+
+                <h3 class="title-2 card-title">Skilled Chefs</h3>
+
+                <p class="label-1 card-text">Our skilled chefs craft every dish with passion, precision, and the rich flavors of tradition.</p>
+
+              </div>
+            </li>
+
+            <li class="feature-item">
+              <div class="feature-card">
+
+                <div class="card-icon">
+                  <img src="./assets/images/events-parties.jpg" width="100" height="80" loading="lazy" alt="icon">
+                </div>
+
+                <h3 class="title-2 card-title">Event & Party</h3>
+
+                <p class="label-1 card-text">We make your birthdays and events special with seamless service and great food.</p>
+
+              </div>
+            </li>
+
+          </ul>
+          <ul class="grid-list">
+            
+            <li class="feature-item">
+              <div class="feature-card">
+
+                <div class="card-icon">
+                  <img src="./assets/images/parking.png" width="100" height="80" loading="lazy" alt="icon">
+                </div>
+
+                <h3 class="title-2 card-title">Parking Facility</h3>
+
+                <p class="label-1 card-text">Spacious, easy-access parking available for your comfort.</p>
+
+              </div>
+            </li>
+            
+            <li class="feature-item">
+              <div class="feature-card">
+
+                <div class="card-icon">
+                  <img src="./assets/images/naan-karhai.png" width="100" height="80" loading="lazy" alt="icon">
+                </div>
+
+                <h3 class="title-2 card-title">Naan, Roti & Karhai</h3>
+
+                <p class="label-1 card-text">Live tandoor naan, sizzling karhai, handi & grilled burgers.</p>
+
+              </div>
+            </li>
+            <li class="feature-item">
+              <div class="feature-card">
+
+                <div class="card-icon">
+                  <img src="./assets/images/easypaisa.png" width="100" height="80" loading="lazy" alt="icon">
+                </div>
+
+                <h3 class="title-2 card-title">JazzCash & EasyPaisa</h3>
+
+                <p class="label-1 card-text">Enjoy quick & secure payments via your favorite wallets.</p>
+
+              </div>
+            </li>
+             <li class="feature-item">
+              <div class="feature-card">
+
+                <div class="card-icon">
+                  <img src="./assets/images/bbq.jpg" width="100" height="80" loading="lazy" alt="icon">
+                </div>
+
+                <h3 class="title-2 card-title">Live BBQ</h3>
+
+                <p class="label-1 card-text">Savor smoky, tender BBQ cooked live at your service.</p>
+
+              </div>
+            </li>
+          </ul>
+          <ul class="grid-list">
+            
+          
+            
+            <li class="feature-item">
+              <div class="feature-card">
+
+                <div class="card-icon">
+                  <img src="./assets/images/quality.png" width="100" height="80" loading="lazy" alt="icon">
+                </div>
+
+                <h3 class="title-2 card-title">Top Quality</h3>
+
+                <p class="label-1 card-text">We maintain high standards in hygiene, ingredients & preparation.</p>
+
+              </div>
+            </li>
+            <li class="feature-item">
+              <div class="feature-card">
+
+                <div class="card-icon">
+                  <img src="./assets/images/fresh.png" width="100" height="80" loading="lazy" alt="icon">
+                </div>
+
+                <h3 class="title-2 card-title">Freshness</h3>
+
+                <p class="label-1 card-text">Meals cooked fresh to retain nutrition, taste, and aroma.</p>
+
+              </div>
+            </li>
+             <li class="feature-item">
+              <div class="feature-card">
+
+                <div class="card-icon">
+                  <img src="./assets/images/ambiance.png" width="100" height="80" loading="lazy" alt="icon">
+                </div>
+
+                <h3 class="title-2 card-title">Ambiance</h3>
+
+                <p class="label-1 card-text">A peaceful, elegant atmosphere perfect for family and friends.</p>
+
+              </div>
+            </li>
+          </ul>
+          <img src="./assets/images/shape-7.png" width="208" height="178" loading="lazy" alt="shape"
+            class="shape shape-1">
+
+          <img src="./assets/images/shape-8.png" width="120" height="115" loading="lazy" alt="shape"
+            class="shape shape-2">
+
+        </div>
+      </section>
+
+
+
+
+
+      
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer section has-bg-image text-center"
+    style="background-image: url('./assets/images/footer-bg.jpg')">
+    <div class="container">
+
+      <div class="footer-top grid-list">
+
+        <div class="footer-brand has-before has-after">
+
+          <a href="#" class="logo">
+            <img src="./assets/images/favicon.png" width="160" height="100" loading="lazy" alt="panjtara home">
+          </a>
+
+          <address class="body-4">
+            Restaurant St, Harely Street, Rawalpindi, Pakistan
+          </address>
+
+          <a href="mailto:booking@panjtara.com" class="body-4 contact-link">booking@panjtara.com</a>
+
+          <a href="tel:+03331114699" class="body-4 contact-link">Booking Request : +033-31114699</a>
+
+          <p class="body-4">
+            Open : 07:00 pm - 02:00 am
+          </p>
+
+          <div class="wrapper">
+            <div class="separator"></div>
+            <div class="separator"></div>
+            <div class="separator"></div>
+          </div>
+
+          <p class="title-1">Get News & Offers</p>
+
+          <p class="label-1">
+            Subscribe us & Get <span class="span">Connected withus.</span>
+          </p>
+
+          <form action="" class="input-wrapper">
+            <div class="icon-wrapper">
+              <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+
+              <input type="email" name="email_address" placeholder="Your email" autocomplete="off" class="input-field">
+            </div>
+
+            <button type="submit" class="btn btn-secondary">
+              <span class="text text-1">Subscribe</span>
+
+              <span class="text text-2" aria-hidden="true">Subscribe</span>
+            </button>
+          </form>
+
+        </div>
+
+        <ul class="footer-list">
+
+          <li>
+            <a href="#" class="label-2 footer-link hover-underline">Home</a>
+          </li>
+
+          <li>
+            <a href="#" class="label-2 footer-link hover-underline">Menus</a>
+          </li>
+
+          <li>
+            <a href="#" class="label-2 footer-link hover-underline">About Us</a>
+          </li>
+
+          <li>
+            <a href="#" class="label-2 footer-link hover-underline">Our Chefs</a>
+          </li>
+
+          <li>
+            <a href="#" class="label-2 footer-link hover-underline">Contact</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <a href="#" class="label-2 footer-link hover-underline">Facebook</a>
+          </li>
+
+          <li>
+            <a href="#" class="label-2 footer-link hover-underline">Instagram</a>
+          </li>
+
+          <li>
+            <a href="#" class="label-2 footer-link hover-underline">Twitter</a>
+          </li>
+
+          <li>
+            <a href="#" class="label-2 footer-link hover-underline">Youtube</a>
+          </li>
+
+          <li>
+            <a href="#" class="label-2 footer-link hover-underline">Google Map</a>
+          </li>
+
+        </ul>
+
+      </div>
+
+      <div class="footer-bottom">
+
+        <p class="copyright">
+          &copy; 2025 Panjtara. All Rights Reserved | Crafted by Zaib Fatima [zaibfatima058@gmail.com]
+        </p>
+
+      </div>
+
+    </div>
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn active" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

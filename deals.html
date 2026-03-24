@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Deals & Discounts - Panjtara</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="cart.js"></script>
+  <style>
+    .footer-brand {
+      position: relative;
+      z-index: 1;
+    }
+
+    .footer-brand::before,
+    .footer-brand::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      width: 20px;
+      height: 100%;
+      background-image: url('./assets/images/footer-form-pattern.svg');
+      background-repeat: repeat-y;
+      background-size: contain;
+      z-index: -1;
+    }
+
+    .footer-brand::before {
+      left: 0;
+    }
+
+    .footer-brand::after {
+      right: 0;
+    }
+  </style>
+</head>
+<body class="bg-black text-white font-sans">
+
+  <!-- Header -->
+  <header class="bg-yellow-900 text-center py-6 shadow-md relative">
+    <h1 class="text-4xl font-bold tracking-wide">🎉 Panjtara Deals & Discounts</h1>
+    <p class="text-yellow-300 mt-2">Your favorite meals, now with amazing offers!</p>
+
+    <!-- Floating Cart Button -->
+    <div class="absolute top-4 right-6">
+      <button onclick="toggleCartPanel()" class="relative bg-yellow-500 text-black p-2 rounded-full shadow hover:bg-yellow-400">
+        🛒
+        <span id="cart-count" class="absolute -top-2 -right-2 bg-red-600 text-white text-xs font-bold px-2 py-0.5 rounded-full">0</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Cart Panel Popup -->
+  <div id="cart-panel" class="fixed top-20 right-6 w-80 bg-gray-900 p-4 rounded-xl shadow-lg z-50 hidden">
+    <h3 class="text-xl font-bold text-yellow-400 mb-4">🛒 Cart</h3>
+    <ul id="cart-items" class="space-y-2 mb-4 max-h-60 overflow-y-auto"></ul>
+    <p class="text-lg font-semibold text-white">Total: <span id="cart-total">0</span>/-</p>
+    <button onclick="placeOrder()" class="mt-4 bg-yellow-500 text-black text-lg font-bold px-6 py-2 rounded hover:bg-yellow-400">Place Order</button>
+  </div>
+
+  <!-- Main Container -->
+  <main class="relative bg-cover bg-center py-10 px-4 md:px-12 lg:px-32" style="background-image: url('./assets/images/footer-bg.jpg');">
+    <div class="footer-brand bg-black bg-opacity-90 rounded-3xl shadow-xl p-6 md:p-12 max-w-6xl mx-auto">
+
+      <!-- Section Heading -->
+      <div class="text-center mb-10">
+        <h2 class="text-4xl font-bold text-yellow-400">✨ Special Deals</h2>
+        <p class="text-gray-300 mt-2">Check out our limited-time offers below</p>
+      </div>
+
+      <!-- Deals -->
+      <div class="space-y-12">
+        <div class="flex flex-col md:flex-row items-center bg-gray-800 rounded-xl overflow-hidden">
+          <div class="p-6 md:w-1/2">
+            <h3 class="text-2xl text-yellow-400 font-semibold mb-2">Deal for 2 – 1240/-</h3>
+            <p class="text-gray-300 mb-4">Arabian Rice + Chicken (2 pcs 1/8) + 2 Seekh Kabab + 4 Malai Boti</p>
+            <div class="flex items-center gap-3">
+              <button onclick="decrementItem('Deal for 2')" class="bg-yellow-600 text-black font-bold px-3 py-1 rounded-full">-</button>
+              <span id="qty-Deal for 2">0</span>
+              <button onclick="addToCart('Deal for 2', 1240)" class="bg-yellow-600 text-black font-bold px-3 py-1 rounded-full">+</button>
+            </div>
+          </div>
+          <img src="./assets/images/deals.png" alt="Deal for 2" class="w-full md:w-1/2 object-cover h-64">
+        </div>
+
+        <div class="flex flex-col md:flex-row items-center bg-gray-800 rounded-xl overflow-hidden">
+          <img src="./assets/images/deals.png" alt="Deal for 4" class="w-full md:w-1/2 object-cover h-64">
+          <div class="p-6 md:w-1/2">
+            <h3 class="text-2xl text-yellow-400 font-semibold mb-2">Deal for 4 – 2450/-</h3>
+            <p class="text-gray-300 mb-4">Arabian Rice + Chicken Angara (1/2) + 4 Seekh Kabab + 8 Malai Boti</p>
+            <div class="flex items-center gap-3">
+              <button onclick="decrementItem('Deal for 4')" class="bg-yellow-600 text-black font-bold px-3 py-1 rounded-full">-</button>
+              <span id="qty-Deal for 4">0</span>
+              <button onclick="addToCart('Deal for 4', 2450)" class="bg-yellow-600 text-black font-bold px-3 py-1 rounded-full">+</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-col md:flex-row items-center bg-gray-800 rounded-xl overflow-hidden">
+          <div class="p-6 md:w-1/2">
+            <h3 class="text-2xl text-yellow-400 font-semibold mb-2">Deal for 6 – 4390/-</h3>
+            <p class="text-gray-300 mb-4">Arabian Rice + Chicken Angara (1/2) + 6 Seekh Kabab + 12 Malai Boti + Chicken Karhai (1/2) + Roghni Naan 8 pcs</p>
+            <div class="flex items-center gap-3">
+              <button onclick="decrementItem('Deal for 6')" class="bg-yellow-600 text-black font-bold px-3 py-1 rounded-full">-</button>
+              <span id="qty-Deal for 6">0</span>
+              <button onclick="addToCart('Deal for 6', 4390)" class="bg-yellow-600 text-black font-bold px-3 py-1 rounded-full">+</button>
+            </div>
+          </div>
+          <img src="./assets/images/deals.png" alt="Deal for 6" class="w-full md:w-1/2 object-cover h-64">
+        </div>
+
+        <div class="flex flex-col md:flex-row items-center bg-gray-800 rounded-xl overflow-hidden">
+          <img src="./assets/images/deals.png" alt="Family Deal" class="w-full md:w-1/2 object-cover h-64">
+          <div class="p-6 md:w-1/2">
+            <h3 class="text-2xl text-yellow-400 font-semibold mb-2">Family Deal – 7200/-</h3>
+            <p class="text-gray-300 mb-4">Arabian Rice + Chicken Angara Full + 8 Seekh Kabab + 16 Malai Boti + Chicken Karhai Full + Roghni Naan 12 pcs</p>
+            <div class="flex items-center gap-3">
+              <button onclick="decrementItem('Family Deal')" class="bg-yellow-600 text-black font-bold px-3 py-1 rounded-full">-</button>
+              <span id="qty-Family Deal">0</span>
+              <button onclick="addToCart('Family Deal', 7200)" class="bg-yellow-600 text-black font-bold px-3 py-1 rounded-full">+</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-yellow-900 text-center py-6 text-yellow-300">
+    <p>© 2025 Panjtara Foods. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function toggleCartPanel() {
+      document.getElementById("cart-panel").classList.toggle("hidden");
+    }
+
+    // Patch into cart.js renderCart
+    const originalRenderCart = renderCart;
+    renderCart = function () {
+      originalRenderCart();
+      const count = Object.values(cart).reduce((sum, { qty }) => sum + qty, 0);
+      document.getElementById("cart-count").textContent = count;
+    }
+  </script>
+</body>
+</html>

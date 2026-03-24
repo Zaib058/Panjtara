@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Menu - Panjtara</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root {
+      --gold: #d4af37;
+    }
+    body {
+      background-image: url('./assets/images/footer-bg.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
+    .footer-brand {
+      position: relative;
+      background-color: rgba(0, 0, 0, 0.9);
+      border-radius: 1rem;
+      padding: 2rem;
+      overflow: hidden;
+    }
+    .footer-brand::before,
+    .footer-brand::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      width: 20px;
+      height: 100%;
+      background-image: url('./assets/images/footer-form-pattern.svg');
+      background-repeat: repeat-y;
+      background-size: contain;
+    }
+    .footer-brand::before { left: 0; }
+    .footer-brand::after { right: 0; }
+    details summary::-webkit-details-marker { display: none; }
+  </style>
+</head>
+<body class="text-white font-sans">
+
+  <header class="bg-black text-center py-6 shadow-md">
+    <h1 class="text-4xl font-bold tracking-wide text-[--gold]">🍽️ Panjtara Menu</h1>
+    <p class="text-gray-400 mt-2">Explore our delicious offerings</p>
+  </header>
+
+  <main class="max-w-5xl mx-auto mt-8 p-4 md:p-8 footer-brand text-white">
+
+    <!-- MENU SECTIONS -->
+    <!-- Fast Food Section -->
+    <section class="mb-12">
+      <h2 class="text-3xl font-semibold border-b border-[--gold] pb-2 mb-4">Fast Food</h2>
+      <ul class="grid md:grid-cols-2 gap-4">
+        <li class="menu-item" data-name="Grill Beef Burger" data-price="695">Grill Beef Burger - 695/-</li>
+        <li class="menu-item" data-name="Grill Chicken Burger" data-price="675">Grill Chicken Burger - 675/-</li>
+        <li class="menu-item" data-name="Zinger Burger" data-price="490">Zinger Burger - 490/-</li>
+        <li class="menu-item" data-name="Chicken Roll Paratha" data-price="430">Chicken Roll Paratha - 430/-</li>
+        <li class="menu-item" data-name="Malai Boti Roll Paratha" data-price="430">Malai Boti Roll Paratha - 430/-</li>
+        <li class="menu-item" data-name="Seekh Kabab Roll Paratha" data-price="430">Seekh Kabab Roll Paratha - 430/-</li>
+        <li class="menu-item" data-name="Arabians Wrap" data-price="550">Arabians Wrap - 550/-</li>
+      </ul>
+    </section>
+
+    <div class="flex justify-center mb-12">
+      <img src="./assets/images/separator.svg" alt="separator" class="w-24" />
+    </div>
+
+    <!-- Arabian Platters Section -->
+    <section class="mb-12">
+      <h2 class="text-3xl font-semibold border-b border-[--gold] pb-2 mb-4">Arabian Platters</h2>
+      <ul class="grid md:grid-cols-2 gap-4">
+        <li class="menu-item" data-name="Rice + Chicken 1/4" data-price="590">Rice + Chicken 1/4 - 590/-</li>
+        <li class="menu-item" data-name="Rice + Chicken 1/8 + 2 Seekh Kabab" data-price="650">Rice + Chicken 1/8 + 2 Seekh Kabab - 650/-</li>
+        <li class="menu-item" data-name="Rice + Chicken 1/8 + 1 Seekh + 2 Malai Boti" data-price="670">Rice + Chicken 1/8 + 1 Seekh + 2 Malai Boti - 670/-</li>
+      </ul>
+    </section>
+
+    <div class="flex justify-center mb-12">
+      <img src="./assets/images/separator.svg" alt="separator" class="w-24" />
+    </div>
+
+    <!-- Main Course Section -->
+    <section class="mb-12">
+      <h2 class="text-3xl font-semibold border-b border-[--gold] pb-2 mb-4">Main Course</h2>
+      <ul class="grid md:grid-cols-2 gap-4">
+        <li class="menu-item" data-name="Chicken Angara" data-price="1590">Chicken Angara - 1590/-</li>
+        <li class="menu-item" data-name="Chicken Karahi" data-price="1890">Chicken Karahi - 1890/-</li>
+        <li class="menu-item" data-name="White Karahi" data-price="2250">White Karahi - 2250/-</li>
+        <li class="menu-item" data-name="Karahi Makhni" data-price="2050">Karahi Makhni - 2050/-</li>
+        <li class="menu-item" data-name="Mutton Karahi" data-price="3990">Mutton Karahi - 3990/-</li>
+        <li class="menu-item" data-name="Balochi Rosh" data-price="1000">Balochi Rosh - 1000/-</li>
+      </ul>
+    </section>
+
+    <div class="flex justify-center mb-12">
+      <img src="./assets/images/separator.svg" alt="separator" class="w-24" />
+    </div>
+
+    <!-- Deals Section -->
+    <section class="mb-12">
+      <h2 class="text-3xl font-semibold border-b border-[--gold] pb-2 mb-4">Deals</h2>
+      <ul class="grid gap-4">
+        <li class="menu-item" data-name="Deal for 2" data-price="1240">Deal for 2 – Arabian Rice + Chicken (2 pcs 1/8) + 2 Seekh Kabab + 4 Malai Boti - 1240/-</li>
+        <li class="menu-item" data-name="Deal for 4" data-price="2390">Deal for 4 – Option 1: Arabian Rice + Chicken Angara (1/2) + 4 Seekh Kabab + 8 Malai Boti OR Option 2: Arabian Rice + Chicken Angara Full - 2390/- to 2450/-</li>
+        <li class="menu-item" data-name="Deal for 6" data-price="4390">Deal for 6 – Arabian Rice + Chicken Angara (1/2) + 6 Seekh Kabab + 12 Malai Boti + Chicken Karhai (1/2) + 8 Roghni Naan - 4390/-</li>
+        <li class="menu-item" data-name="Family Deal" data-price="7200">Family Deal – Arabian Rice + Chicken Angara Full + 8 Seekh Kabab + 16 Malai Boti + Chicken Karhai Full + 12 Roghni Naan - 7200/-</li>
+      </ul>
+    </section>
+
+  </main>
+  <!-- Cart Sidebar -->
+  <div id="cart" class="fixed right-0 top-0 w-80 h-full bg-black bg-opacity-95 shadow-xl transform translate-x-full transition-transform duration-300 z-50 p-4 text-white">
+    <div class="flex justify-between items-center mb-4">
+      <h3 class="text-xl font-bold text-[--gold]">Your Cart</h3>
+      <button onclick="toggleCart()" class="text-white text-2xl">&times;</button>
+    </div>
+    <ul id="cart-items" class="space-y-2"></ul>
+    <div class="mt-4 border-t border-gray-700 pt-2">
+      <p>Total: <span id="cart-total" class="text-[--gold]">0</span>/-</p>
+      <button onclick="placeOrder()" class="mt-2 w-full bg-[--gold] text-black py-2 rounded hover:bg-yellow-500">Place Order</button>
+    </div>
+  </div>
+
+  <button onclick="toggleCart()" class="fixed top-6 right-6 z-40 bg-[--gold] text-black px-4 py-2 rounded shadow hover:bg-yellow-500">🛒 Cart</button>
+
+  <footer class="bg-black text-center py-6 text-[--gold]">
+    <p>© 2025 Panjtara Foods. All rights reserved.</p>
+  </footer>
+
+  <script src="./cart.js"></script>
+  <script>
+    document.querySelectorAll('.menu-item').forEach(el => {
+      const name = el.dataset.name;
+      const price = parseInt(el.dataset.price);
+
+      el.innerHTML = `
+        <div class="flex justify-between items-center">
+          <span>${name} - ${price}/-</span>
+          <div class="flex items-center space-x-1">
+            <button onclick="decrementItem('${name}')" class="bg-gray-700 w-6 h-6 rounded">−</button>
+            <span id="qty-${name}" class="w-6 text-center">0</span>
+            <button onclick="addToCart('${name}', ${price})" class="bg-[--gold] text-black w-6 h-6 rounded">+</button>
+          </div>
+        </div>
+      `;
+    });
+
+    function placeOrder() {
+      if (Object.keys(cart).length === 0) {
+        alert("Your cart is empty!");
+        return;
+      }
+      const items = Object.entries(cart)
+        .map(([name, { qty }]) => `${name} x${qty}`)
+        .join(", ");
+
+      const message = `Hello! I'd like to order: ${items}.`;
+      const phone = "923001234567"; // Replace with valid WhatsApp number (no + or dashes)
+      const whatsappUrl = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+      const formspreeUrl = "https://formspree.io/f/xqabwwxy";
+
+      // Fallback to WhatsApp or Formspree
+      const useWhatsApp = true; // change to false to always use email
+      if (useWhatsApp) {
+        window.open(whatsappUrl, "_blank");
+      } else {
+        // Send to Formspree (must add a form tag and submit here if needed)
+        alert("Your order will be sent to our email. Feature coming soon.");
+      }
+    }
+  </script>
+</body>
+</html>
